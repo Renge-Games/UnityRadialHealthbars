@@ -10,3 +10,5 @@ A segmented radial health bar shader for Unity URP/HDRP 2019 and up.<br/><br/>
 ![Cover Image](https://i.imgur.com/3yTjTMj.png)
 
 ![Demo Image](https://i.imgur.com/URM5Uha.png)
+
+![Version Comparison](https://i.imgur.com/EU5iSmD.png)
