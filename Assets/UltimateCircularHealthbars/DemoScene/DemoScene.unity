@@ -121,7 +121,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!21 &950516329
+--- !u!21 &544828741
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -170,7 +170,7 @@ Material:
     - _Rotation: 54
     - _SecondRemoveSegments: 0.5
     - _SegmentCount: 5
-    - _SegmentSpacing: 0.02
+    - _SegmentSpacing: 0.035
     m_Colors:
     - _BorderColor: {r: 2, g: 2, b: 2, a: 1}
     - _Color: {r: 0.08669758, g: 1, b: 0, a: 1}
@@ -313,7 +313,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 950516329}
+  - {fileID: 544828741}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -390,6 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1d3fe243520c94997d996c77c4ca8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthPercent: 1
 --- !u!114 &8420331061052251295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,7 +405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SegmentCount: 5
   RemovedSegments: 0
-  Spacing: 0.02
+  Spacing: 0.035
   Color: {r: 0.08669758, g: 1, b: 0, a: 1}
   Radius: 0.4
   LineWidth: 0.07
