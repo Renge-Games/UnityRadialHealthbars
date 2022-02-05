@@ -1,5 +1,5 @@
 # Ultimate Circular Health Bars Lite
-A segmented radial health bar shader for Unity URP/HDRP 2019 and up.<br/><br/>
+A segmented radial health bar shader for Unity 2019 and up.<br/><br/>
 
 - This repo is the result of a tutorial I made on circular health bars using shaders. [Available on YouTube](https://www.youtube.com/watch?v=V5h2ClMUguQ). The tutorial also covers some aspects of shaders and shader graph in general.<br/>
 
