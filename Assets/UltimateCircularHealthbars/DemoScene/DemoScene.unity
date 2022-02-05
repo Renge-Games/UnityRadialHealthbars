@@ -121,7 +121,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!21 &544828741
+--- !u!21 &1133847804
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -129,9 +129,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: radialSegmentedHealthBarInstance
-  m_Shader: {fileID: -6465566751694194690, guid: 754db91c7cf454b4a937cbe5f4a0a40b,
-    type: 3}
-  m_ShaderKeywords: EMPTY_NOISE_ON ETC1_EXTERNAL_ALPHA PULSATE_WHEN_LOW_ON
+  m_Shader: {fileID: 4800000, guid: 4f4011c7964fdec4d896307c35d3946c, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -141,45 +140,67 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - CONTENT_NOISE: 0
-    - EMPTY_NOISE: 1
-    - OVERLAY_NOISE: 0
-    - PULSATE_WHEN_LOW: 1
-    - Vector1_5F1B012: 59.6
-    - Vector1_ECC2C9F3: 5.5
-    - Vector1_F9D53FA9: 0
-    - _BorderSpacing: 0.02
-    - _BorderWidth: 0.02
-    - _ContentNoiseScale: 100
-    - _ContentNoiseStrength: 0.2
-    - _EmptyNoiseScale: 100
-    - _EmptyNoiseStrength: 0.5
+    - _AlphaClip: 0
+    - _Blend: 0
+    - _BumpScale: 1
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DstBlend: 0
+    - _EnvironmentReflections: 1
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
     - _LineWidth: 0.07
-    - _OverlayNoiseScale: 100
-    - _OverlayNoiseStrength: 0.5
-    - _PulseActivationThreshold: 0.5
-    - _PulseSpeed: 10
+    - _Metallic: 0
+    - _OcclusionStrength: 1
+    - _QueueOffset: 0
     - _Radius: 0.4
-    - _RemoveBorder: 0.5
-    - _RemoveSegments: 0
+    - _ReceiveShadows: 1
+    - _RemoveSegments: 1
     - _Rotation: 54
-    - _SecondRemoveSegments: 0.5
     - _SegmentCount: 5
-    - _SegmentSpacing: 0.035
+    - _SegmentSpacing: 0.02
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _WorkflowMode: 1
+    - _ZWrite: 1
     m_Colors:
-    - _BorderColor: {r: 2, g: 2, b: 2, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0.08669758, g: 1, b: 0, a: 1}
-    - _ContentNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _EmptyColor: {r: 0.3584906, g: 0.3466536, b: 0.3466536, a: 1}
-    - _EmptyNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _OverlayNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _SecondColor: {r: 0.3962264, g: 0.1140085, b: 0.1140085, a: 1}
-    - _SpaceColor: {r: 0.990566, g: 0.546268, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
 --- !u!1 &1282757990
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +238,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -313,7 +334,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 544828741}
+  - {fileID: 1133847804}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -405,7 +426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SegmentCount: 5
   RemovedSegments: 0
-  Spacing: 0.035
+  Spacing: 0.02
   Color: {r: 0.08669758, g: 1, b: 0, a: 1}
   Radius: 0.4
   LineWidth: 0.07

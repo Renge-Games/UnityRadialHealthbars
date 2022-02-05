@@ -2,12 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 namespace RengeGames.HealthBars {
 
     [ExecuteAlways]
     [DisallowMultipleComponent]
+    [AddComponentMenu("Health Bars/Circular Segmented Health Bar")]
     public class UltimateCircularHealthBar : MonoBehaviour, ISegmentedHealthBar {
         [Header("Data")] public float SegmentCount = 5f;
         public float RemovedSegments = 0f;
@@ -38,6 +40,15 @@ namespace RengeGames.HealthBars {
 
         private bool materialAssigned = false;
         private const string MATERIAL_NAME = "radialSegmentedHealthBarInstance";
+
+        private static string BaseMaterialName {
+            get {
+                if (GraphicsSettings.renderPipelineAsset && Int32.Parse(Application.unityVersion.Split('.')[0]) > 2018)
+                    return "RadialSegmentedHealthBarMaterial";
+
+                return "RadialSegmentedHealthBarBuiltInMaterial";
+            }
+        }
 
         private void Awake() {
 
@@ -140,7 +151,7 @@ namespace RengeGames.HealthBars {
 
         public void AssignMaterial(Image r) {
             //get material
-            Material mat = Resources.Load<Material>("RadialSegmentedHealthBarMaterial");
+            Material mat = Resources.Load<Material>(BaseMaterialName);
 
             if (Application.isEditor && mat != null && r != null) {
                 //generate and apply the material
@@ -162,7 +173,7 @@ namespace RengeGames.HealthBars {
 
         public void AssignMaterial(SpriteRenderer r) {
             //get resources
-            Material mat = Resources.Load<Material>("RadialSegmentedHealthBarMaterial");
+            Material mat = Resources.Load<Material>(BaseMaterialName);
             Sprite sprite = Resources.Load<Sprite>("placeholderSprite");
 
             if (Application.isEditor && mat != null && r != null) {
