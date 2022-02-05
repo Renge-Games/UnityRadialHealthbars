@@ -7,7 +7,7 @@ A segmented radial health bar shader for Unity 2019 and up.<br/><br/>
 
 - This free version of my asset is also [available in the asset store](http://u3d.as/2H4f) to make installation easier.
 
-![Cover Image](https://i.imgur.com/3yTjTMj.png)
+![Cover Image](https://i.imgur.com/q9SrGm0.png)
 
 ![Demo Image](https://i.imgur.com/URM5Uha.png)
 
