@@ -71,6 +71,14 @@ namespace RengeGames.HealthBars {
                 }
             }
 
+            oldColor = currentMaterial.GetColor(colorID);
+            oldSegmentCount = currentMaterial.GetFloat(segmentCountID);
+            oldRemovedSegments = currentMaterial.GetFloat(removedSegmentsID);
+            oldSpacing = currentMaterial.GetFloat(spacingID);
+            oldRadius = currentMaterial.GetFloat(radiusID);
+            oldLineWidth = currentMaterial.GetFloat(linewidthID);
+            oldRotation = currentMaterial.GetFloat(rotationID);
+
             SetMaterialPropertyIfChanged(ref oldColor, Color, colorID);
             SetMaterialPropertyIfChanged(ref oldSegmentCount, SegmentCount, segmentCountID);
             SetMaterialPropertyIfChanged(ref oldRemovedSegments, RemovedSegments, removedSegmentsID);

@@ -121,7 +121,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!21 &158442982
+--- !u!21 &3023885
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -129,8 +129,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: radialSegmentedHealthBarInstance
-  m_Shader: {fileID: 4800000, guid: 4f4011c7964fdec4d896307c35d3946c, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_Shader: {fileID: -6465566751694194690, guid: 754db91c7cf454b4a937cbe5f4a0a40b,
+    type: 3}
+  m_ShaderKeywords: EMPTY_NOISE_ON ETC1_EXTERNAL_ALPHA PULSATE_WHEN_LOW_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -140,67 +141,104 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _BaseMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
+    m_Floats:
+    - CONTENT_NOISE: 0
+    - EMPTY_NOISE: 1
+    - OVERLAY_NOISE: 0
+    - PULSATE_WHEN_LOW: 1
+    - Vector1_5F1B012: 59.6
+    - Vector1_ECC2C9F3: 5.5
+    - Vector1_F9D53FA9: 0
+    - _BorderSpacing: 0.02
+    - _BorderWidth: 0.02
+    - _ContentNoiseScale: 100
+    - _ContentNoiseStrength: 0.2
+    - _EmptyNoiseScale: 100
+    - _EmptyNoiseStrength: 0.5
+    - _LineWidth: 0.07
+    - _OverlayNoiseScale: 100
+    - _OverlayNoiseStrength: 0.5
+    - _PulseActivationThreshold: 0.5
+    - _PulseSpeed: 10
+    - _Radius: 0.377
+    - _RemoveBorder: 0.5
+    - _RemoveSegments: 1
+    - _Rotation: 0
+    - _SecondRemoveSegments: 0.5
+    - _SegmentCount: 10
+    - _SegmentSpacing: 0.017
+    m_Colors:
+    - _BorderColor: {r: 2, g: 2, b: 2, a: 1}
+    - _Color: {r: 1, g: 0.19339621, b: 0.82806355, a: 1}
+    - _ContentNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _EmptyColor: {r: 0.3584906, g: 0.3466536, b: 0.3466536, a: 1}
+    - _EmptyNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _OverlayNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _SecondColor: {r: 0.3962264, g: 0.1140085, b: 0.1140085, a: 1}
+    - _SpaceColor: {r: 0.990566, g: 0.546268, b: 0, a: 0}
+--- !u!21 &147579745
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: radialSegmentedHealthBarInstance
+  m_Shader: {fileID: -6465566751694194690, guid: 754db91c7cf454b4a937cbe5f4a0a40b,
+    type: 3}
+  m_ShaderKeywords: EMPTY_NOISE_ON ETC1_EXTERNAL_ALPHA PULSATE_WHEN_LOW_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AlphaClip: 0
-    - _Blend: 0
-    - _BumpScale: 1
-    - _Cull: 2
-    - _Cutoff: 0.5
-    - _DstBlend: 0
-    - _EnvironmentReflections: 1
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
+    - CONTENT_NOISE: 0
+    - EMPTY_NOISE: 1
+    - OVERLAY_NOISE: 0
+    - PULSATE_WHEN_LOW: 1
+    - Vector1_5F1B012: 59.6
+    - Vector1_ECC2C9F3: 5.5
+    - Vector1_F9D53FA9: 0
+    - _BorderSpacing: 0.02
+    - _BorderWidth: 0.02
+    - _ContentNoiseScale: 100
+    - _ContentNoiseStrength: 0.2
+    - _EmptyNoiseScale: 100
+    - _EmptyNoiseStrength: 0.5
     - _LineWidth: 0.212
-    - _Metallic: 0
-    - _OcclusionStrength: 1
-    - _QueueOffset: 0
+    - _OverlayNoiseScale: 100
+    - _OverlayNoiseStrength: 0.5
+    - _PulseActivationThreshold: 0.5
+    - _PulseSpeed: 10
     - _Radius: 0.225
-    - _ReceiveShadows: 1
+    - _RemoveBorder: 0.5
     - _RemoveSegments: 0
     - _Rotation: 54
+    - _SecondRemoveSegments: 0.5
     - _SegmentCount: 3
     - _SegmentSpacing: 0.05
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _Surface: 0
-    - _WorkflowMode: 1
-    - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BorderColor: {r: 2, g: 2, b: 2, a: 1}
     - _Color: {r: 0.3820755, g: 0.7083272, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _ContentNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _EmptyColor: {r: 0.3584906, g: 0.3466536, b: 0.3466536, a: 1}
+    - _EmptyNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _OverlayNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _SecondColor: {r: 0.3962264, g: 0.1140085, b: 0.1140085, a: 1}
+    - _SpaceColor: {r: 0.990566, g: 0.546268, b: 0, a: 0}
 --- !u!1 &172112599
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,6 +251,7 @@ GameObject:
   - component: {fileID: 172112602}
   - component: {fileID: 172112601}
   - component: {fileID: 172112600}
+  - component: {fileID: 172112604}
   m_Layer: 0
   m_Name: RadialSegmentedHealthbarSprite (8)
   m_TagString: Untagged
@@ -270,7 +309,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 640783067}
+  - {fileID: 496878600}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -316,86 +355,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &179656199
-Material:
-  serializedVersion: 6
+--- !u!95 &172112604
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: radialSegmentedHealthBarInstance
-  m_Shader: {fileID: 4800000, guid: 4f4011c7964fdec4d896307c35d3946c, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BaseMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlphaClip: 0
-    - _Blend: 0
-    - _BumpScale: 1
-    - _Cull: 2
-    - _Cutoff: 0.5
-    - _DstBlend: 0
-    - _EnvironmentReflections: 1
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
-    - _LineWidth: 0.086
-    - _Metallic: 0
-    - _OcclusionStrength: 1
-    - _QueueOffset: 0
-    - _Radius: 0.363
-    - _ReceiveShadows: 1
-    - _RemoveSegments: 0.2
-    - _Rotation: 145
-    - _SegmentCount: 1
-    - _SegmentSpacing: 0.046
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _Surface: 0
-    - _WorkflowMode: 1
-    - _ZWrite: 1
-    m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 0.36695006, b: 0, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_GameObject: {fileID: 172112599}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47bc8824a79f57f41b34d61ce8b21a70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &243782942
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +386,7 @@ GameObject:
   - component: {fileID: 243782945}
   - component: {fileID: 243782944}
   - component: {fileID: 243782943}
+  - component: {fileID: 243782947}
   m_Layer: 0
   m_Name: RadialSegmentedHealthbarSprite (6)
   m_TagString: Untagged
@@ -465,7 +444,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1264898718}
+  - {fileID: 730148051}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -511,6 +490,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &243782947
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243782942}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47bc8824a79f57f41b34d61ce8b21a70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &352049350
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,6 +521,7 @@ GameObject:
   - component: {fileID: 352049353}
   - component: {fileID: 352049352}
   - component: {fileID: 352049351}
+  - component: {fileID: 352049355}
   m_Layer: 0
   m_Name: RadialSegmentedHealthbarSprite (1)
   m_TagString: Untagged
@@ -557,7 +556,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SegmentCount: 1
   RemovedSegments: 0.2
-  Spacing: 0.046
+  Spacing: 0.023
   Color: {r: 1, g: 0.36695006, b: 0, a: 1}
   Radius: 0.363
   LineWidth: 0.086
@@ -580,7 +579,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 179656199}
+  - {fileID: 665759130}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -626,86 +625,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &434133661
-Material:
-  serializedVersion: 6
+--- !u!95 &352049355
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: radialSegmentedHealthBarInstance
-  m_Shader: {fileID: 4800000, guid: 4f4011c7964fdec4d896307c35d3946c, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BaseMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlphaClip: 0
-    - _Blend: 0
-    - _BumpScale: 1
-    - _Cull: 2
-    - _Cutoff: 0.5
-    - _DstBlend: 0
-    - _EnvironmentReflections: 1
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
-    - _LineWidth: 0.116
-    - _Metallic: 0
-    - _OcclusionStrength: 1
-    - _QueueOffset: 0
-    - _Radius: 0.337
-    - _ReceiveShadows: 1
-    - _RemoveSegments: 0
-    - _Rotation: 45
-    - _SegmentCount: 4
-    - _SegmentSpacing: 0.053
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _Surface: 0
-    - _WorkflowMode: 1
-    - _ZWrite: 1
-    m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 0.97468007, b: 0.2688679, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_GameObject: {fileID: 352049350}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47bc8824a79f57f41b34d61ce8b21a70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &450166710
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,7 +655,7 @@ GameObject:
   - component: {fileID: 450166714}
   - component: {fileID: 450166713}
   - component: {fileID: 450166712}
-  - component: {fileID: 450166711}
+  - component: {fileID: 450166715}
   m_Layer: 0
   m_Name: RadialSegmentedHealthbarSprite (4)
   m_TagString: Untagged
@@ -725,19 +663,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &450166711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 450166710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1d3fe243520c94997d996c77c4ca8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthPercent: 1
 --- !u!114 &450166712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -775,7 +700,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 434133661}
+  - {fileID: 901537844}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -821,6 +746,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &450166715
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450166710}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: befae7036e9958e4488c11d1d1873097, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &463220032
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +777,7 @@ GameObject:
   - component: {fileID: 463220035}
   - component: {fileID: 463220034}
   - component: {fileID: 463220033}
+  - component: {fileID: 463220037}
   m_Layer: 0
   m_Name: RadialSegmentedHealthbarSprite (7)
   m_TagString: Untagged
@@ -890,7 +835,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1834603997}
+  - {fileID: 1299314104}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -936,7 +881,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &640783067
+--- !u!95 &463220037
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463220032}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47bc8824a79f57f41b34d61ce8b21a70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!21 &496878600
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -944,8 +908,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: radialSegmentedHealthBarInstance
-  m_Shader: {fileID: 4800000, guid: 4f4011c7964fdec4d896307c35d3946c, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_Shader: {fileID: -6465566751694194690, guid: 754db91c7cf454b4a937cbe5f4a0a40b,
+    type: 3}
+  m_ShaderKeywords: EMPTY_NOISE_ON ETC1_EXTERNAL_ALPHA PULSATE_WHEN_LOW_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -955,68 +920,46 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _BaseMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AlphaClip: 0
-    - _Blend: 0
-    - _BumpScale: 1
-    - _Cull: 2
-    - _Cutoff: 0.5
-    - _DstBlend: 0
-    - _EnvironmentReflections: 1
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
+    - CONTENT_NOISE: 0
+    - EMPTY_NOISE: 1
+    - OVERLAY_NOISE: 0
+    - PULSATE_WHEN_LOW: 1
+    - Vector1_5F1B012: 59.6
+    - Vector1_ECC2C9F3: 5.5
+    - Vector1_F9D53FA9: 0
+    - _BorderSpacing: 0.02
+    - _BorderWidth: 0.02
+    - _ContentNoiseScale: 100
+    - _ContentNoiseStrength: 0.2
+    - _EmptyNoiseScale: 100
+    - _EmptyNoiseStrength: 0.5
     - _LineWidth: 0.133
-    - _Metallic: 0
-    - _OcclusionStrength: 1
-    - _QueueOffset: 0
+    - _OverlayNoiseScale: 100
+    - _OverlayNoiseStrength: 0.5
+    - _PulseActivationThreshold: 0.5
+    - _PulseSpeed: 10
     - _Radius: 0.301
-    - _ReceiveShadows: 1
+    - _RemoveBorder: 0.5
     - _RemoveSegments: 1
     - _Rotation: 30
+    - _SecondRemoveSegments: 0.5
     - _SegmentCount: 3
     - _SegmentSpacing: 0.023
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _Surface: 0
-    - _WorkflowMode: 1
-    - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BorderColor: {r: 2, g: 2, b: 2, a: 1}
     - _Color: {r: 1, g: 0.64840233, b: 0, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
---- !u!21 &1133847804
+    - _ContentNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _EmptyColor: {r: 0.3584906, g: 0.3466536, b: 0.3466536, a: 1}
+    - _EmptyNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _OverlayNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _SecondColor: {r: 0.3962264, g: 0.1140085, b: 0.1140085, a: 1}
+    - _SpaceColor: {r: 0.990566, g: 0.546268, b: 0, a: 0}
+--- !u!21 &665759130
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -1024,8 +967,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: radialSegmentedHealthBarInstance
-  m_Shader: {fileID: 4800000, guid: 4f4011c7964fdec4d896307c35d3946c, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_Shader: {fileID: -6465566751694194690, guid: 754db91c7cf454b4a937cbe5f4a0a40b,
+    type: 3}
+  m_ShaderKeywords: EMPTY_NOISE_ON ETC1_EXTERNAL_ALPHA PULSATE_WHEN_LOW_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -1035,68 +979,105 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _BaseMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
+    m_Floats:
+    - CONTENT_NOISE: 0
+    - EMPTY_NOISE: 1
+    - OVERLAY_NOISE: 0
+    - PULSATE_WHEN_LOW: 1
+    - Vector1_5F1B012: 59.6
+    - Vector1_ECC2C9F3: 5.5
+    - Vector1_F9D53FA9: 0
+    - _BorderSpacing: 0.02
+    - _BorderWidth: 0.02
+    - _ContentNoiseScale: 100
+    - _ContentNoiseStrength: 0.2
+    - _EmptyNoiseScale: 100
+    - _EmptyNoiseStrength: 0.5
+    - _LineWidth: 0.086
+    - _OverlayNoiseScale: 100
+    - _OverlayNoiseStrength: 0.5
+    - _PulseActivationThreshold: 0.5
+    - _PulseSpeed: 10
+    - _Radius: 0.363
+    - _RemoveBorder: 0.5
+    - _RemoveSegments: 0.2
+    - _Rotation: 145
+    - _SecondRemoveSegments: 0.5
+    - _SegmentCount: 1
+    - _SegmentSpacing: 0.023
+    m_Colors:
+    - _BorderColor: {r: 2, g: 2, b: 2, a: 1}
+    - _Color: {r: 1, g: 0.36695006, b: 0, a: 1}
+    - _ContentNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _EmptyColor: {r: 0.3584906, g: 0.3466536, b: 0.3466536, a: 1}
+    - _EmptyNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _OverlayNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _SecondColor: {r: 0.3962264, g: 0.1140085, b: 0.1140085, a: 1}
+    - _SpaceColor: {r: 0.990566, g: 0.546268, b: 0, a: 0}
+--- !u!21 &712608278
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: radialSegmentedHealthBarInstance
+  m_Shader: {fileID: -6465566751694194690, guid: 754db91c7cf454b4a937cbe5f4a0a40b,
+    type: 3}
+  m_ShaderKeywords: EMPTY_NOISE_ON ETC1_EXTERNAL_ALPHA PULSATE_WHEN_LOW_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AlphaClip: 0
-    - _Blend: 0
-    - _BumpScale: 1
-    - _Cull: 2
-    - _Cutoff: 0.5
-    - _DstBlend: 0
-    - _EnvironmentReflections: 1
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
+    - CONTENT_NOISE: 0
+    - EMPTY_NOISE: 1
+    - OVERLAY_NOISE: 0
+    - PULSATE_WHEN_LOW: 1
+    - Vector1_5F1B012: 59.6
+    - Vector1_ECC2C9F3: 5.5
+    - Vector1_F9D53FA9: 0
+    - _BorderSpacing: 0.02
+    - _BorderWidth: 0.02
+    - _ContentNoiseScale: 100
+    - _ContentNoiseStrength: 0.2
+    - _EmptyNoiseScale: 100
+    - _EmptyNoiseStrength: 0.5
     - _LineWidth: 0.07
-    - _Metallic: 0
-    - _OcclusionStrength: 1
-    - _QueueOffset: 0
+    - _OverlayNoiseScale: 100
+    - _OverlayNoiseStrength: 0.5
+    - _PulseActivationThreshold: 0.5
+    - _PulseSpeed: 10
     - _Radius: 0.4
-    - _ReceiveShadows: 1
+    - _RemoveBorder: 0.5
     - _RemoveSegments: 1
     - _Rotation: 54
+    - _SecondRemoveSegments: 0.5
     - _SegmentCount: 5
     - _SegmentSpacing: 0.02
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _Surface: 0
-    - _WorkflowMode: 1
-    - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BorderColor: {r: 2, g: 2, b: 2, a: 1}
     - _Color: {r: 0.08669758, g: 1, b: 0, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
---- !u!21 &1264898718
+    - _ContentNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _EmptyColor: {r: 0.3584906, g: 0.3466536, b: 0.3466536, a: 1}
+    - _EmptyNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _OverlayNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _SecondColor: {r: 0.3962264, g: 0.1140085, b: 0.1140085, a: 1}
+    - _SpaceColor: {r: 0.990566, g: 0.546268, b: 0, a: 0}
+--- !u!21 &730148051
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -1104,8 +1085,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: radialSegmentedHealthBarInstance
-  m_Shader: {fileID: 4800000, guid: 4f4011c7964fdec4d896307c35d3946c, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_Shader: {fileID: -6465566751694194690, guid: 754db91c7cf454b4a937cbe5f4a0a40b,
+    type: 3}
+  m_ShaderKeywords: EMPTY_NOISE_ON ETC1_EXTERNAL_ALPHA PULSATE_WHEN_LOW_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -1115,67 +1097,163 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _BaseMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
+    m_Floats:
+    - CONTENT_NOISE: 0
+    - EMPTY_NOISE: 1
+    - OVERLAY_NOISE: 0
+    - PULSATE_WHEN_LOW: 1
+    - Vector1_5F1B012: 59.6
+    - Vector1_ECC2C9F3: 5.5
+    - Vector1_F9D53FA9: 0
+    - _BorderSpacing: 0.02
+    - _BorderWidth: 0.02
+    - _ContentNoiseScale: 100
+    - _ContentNoiseStrength: 0.2
+    - _EmptyNoiseScale: 100
+    - _EmptyNoiseStrength: 0.5
+    - _LineWidth: 0.235
+    - _OverlayNoiseScale: 100
+    - _OverlayNoiseStrength: 0.5
+    - _PulseActivationThreshold: 0.5
+    - _PulseSpeed: 10
+    - _Radius: 0.171
+    - _RemoveBorder: 0.5
+    - _RemoveSegments: 0.2
+    - _Rotation: 270
+    - _SecondRemoveSegments: 0.5
+    - _SegmentCount: 1
+    - _SegmentSpacing: 0.033
+    m_Colors:
+    - _BorderColor: {r: 2, g: 2, b: 2, a: 1}
+    - _Color: {r: 0.28773582, g: 0.47924185, b: 1, a: 1}
+    - _ContentNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _EmptyColor: {r: 0.3584906, g: 0.3466536, b: 0.3466536, a: 1}
+    - _EmptyNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _OverlayNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _SecondColor: {r: 0.3962264, g: 0.1140085, b: 0.1140085, a: 1}
+    - _SpaceColor: {r: 0.990566, g: 0.546268, b: 0, a: 0}
+--- !u!21 &901537844
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: radialSegmentedHealthBarInstance
+  m_Shader: {fileID: -6465566751694194690, guid: 754db91c7cf454b4a937cbe5f4a0a40b,
+    type: 3}
+  m_ShaderKeywords: EMPTY_NOISE_ON ETC1_EXTERNAL_ALPHA PULSATE_WHEN_LOW_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AlphaClip: 0
-    - _Blend: 0
-    - _BumpScale: 1
-    - _Cull: 2
-    - _Cutoff: 0.5
-    - _DstBlend: 0
-    - _EnvironmentReflections: 1
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
-    - _LineWidth: 0.235
-    - _Metallic: 0
-    - _OcclusionStrength: 1
-    - _QueueOffset: 0
-    - _Radius: 0.171
-    - _ReceiveShadows: 1
-    - _RemoveSegments: 0.2
-    - _Rotation: 270
-    - _SegmentCount: 1
-    - _SegmentSpacing: 0.033
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _Surface: 0
-    - _WorkflowMode: 1
-    - _ZWrite: 1
+    - CONTENT_NOISE: 0
+    - EMPTY_NOISE: 1
+    - OVERLAY_NOISE: 0
+    - PULSATE_WHEN_LOW: 1
+    - Vector1_5F1B012: 59.6
+    - Vector1_ECC2C9F3: 5.5
+    - Vector1_F9D53FA9: 0
+    - _BorderSpacing: 0.02
+    - _BorderWidth: 0.02
+    - _ContentNoiseScale: 100
+    - _ContentNoiseStrength: 0.2
+    - _EmptyNoiseScale: 100
+    - _EmptyNoiseStrength: 0.5
+    - _LineWidth: 0.116
+    - _OverlayNoiseScale: 100
+    - _OverlayNoiseStrength: 0.5
+    - _PulseActivationThreshold: 0.5
+    - _PulseSpeed: 10
+    - _Radius: 0.337
+    - _RemoveBorder: 0.5
+    - _RemoveSegments: 0
+    - _Rotation: 45
+    - _SecondRemoveSegments: 0.5
+    - _SegmentCount: 4
+    - _SegmentSpacing: 0.053
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.28773582, g: 0.47924185, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _BorderColor: {r: 2, g: 2, b: 2, a: 1}
+    - _Color: {r: 1, g: 0.97468007, b: 0.2688679, a: 1}
+    - _ContentNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _EmptyColor: {r: 0.3584906, g: 0.3466536, b: 0.3466536, a: 1}
+    - _EmptyNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _OverlayNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _SecondColor: {r: 0.3962264, g: 0.1140085, b: 0.1140085, a: 1}
+    - _SpaceColor: {r: 0.990566, g: 0.546268, b: 0, a: 0}
+--- !u!21 &929341484
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: radialSegmentedHealthBarInstance
+  m_Shader: {fileID: -6465566751694194690, guid: 754db91c7cf454b4a937cbe5f4a0a40b,
+    type: 3}
+  m_ShaderKeywords: EMPTY_NOISE_ON ETC1_EXTERNAL_ALPHA PULSATE_WHEN_LOW_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - CONTENT_NOISE: 0
+    - EMPTY_NOISE: 1
+    - OVERLAY_NOISE: 0
+    - PULSATE_WHEN_LOW: 1
+    - Vector1_5F1B012: 59.6
+    - Vector1_ECC2C9F3: 5.5
+    - Vector1_F9D53FA9: 0
+    - _BorderSpacing: 0.02
+    - _BorderWidth: 0.02
+    - _ContentNoiseScale: 100
+    - _ContentNoiseStrength: 0.2
+    - _EmptyNoiseScale: 100
+    - _EmptyNoiseStrength: 0.5
+    - _LineWidth: 0.024
+    - _OverlayNoiseScale: 100
+    - _OverlayNoiseStrength: 0.5
+    - _PulseActivationThreshold: 0.5
+    - _PulseSpeed: 10
+    - _Radius: 0.407
+    - _RemoveBorder: 0.5
+    - _RemoveSegments: 2
+    - _Rotation: 252
+    - _SecondRemoveSegments: 0.5
+    - _SegmentCount: 20
+    - _SegmentSpacing: 0.01
+    m_Colors:
+    - _BorderColor: {r: 2, g: 2, b: 2, a: 1}
+    - _Color: {r: 1, g: 0.1745283, b: 0.20787384, a: 1}
+    - _ContentNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _EmptyColor: {r: 0.3584906, g: 0.3466536, b: 0.3466536, a: 1}
+    - _EmptyNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _OverlayNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _SecondColor: {r: 0.3962264, g: 0.1140085, b: 0.1140085, a: 1}
+    - _SpaceColor: {r: 0.990566, g: 0.546268, b: 0, a: 0}
 --- !u!1 &1282757990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,6 +1266,7 @@ GameObject:
   - component: {fileID: 1282757992}
   - component: {fileID: 1282757991}
   - component: {fileID: 1282757994}
+  - component: {fileID: 1282757995}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1230,7 +1309,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.6490545
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1254,7 +1333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282757990}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 10, y: -10, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1291,7 +1370,26 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!21 &1387610316
+--- !u!95 &1282757995
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282757990}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 219a197faea9f4149951ddf8dbec5d67, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!21 &1299314104
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -1299,8 +1397,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: radialSegmentedHealthBarInstance
-  m_Shader: {fileID: 4800000, guid: 4f4011c7964fdec4d896307c35d3946c, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_Shader: {fileID: -6465566751694194690, guid: 754db91c7cf454b4a937cbe5f4a0a40b,
+    type: 3}
+  m_ShaderKeywords: EMPTY_NOISE_ON ETC1_EXTERNAL_ALPHA PULSATE_WHEN_LOW_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -1310,67 +1409,45 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _BaseMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AlphaClip: 0
-    - _Blend: 0
-    - _BumpScale: 1
-    - _Cull: 2
-    - _Cutoff: 0.5
-    - _DstBlend: 0
-    - _EnvironmentReflections: 1
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
-    - _LineWidth: 0.024
-    - _Metallic: 0
-    - _OcclusionStrength: 1
-    - _QueueOffset: 0
-    - _Radius: 0.407
-    - _ReceiveShadows: 1
-    - _RemoveSegments: 2
-    - _Rotation: 252
-    - _SegmentCount: 20
-    - _SegmentSpacing: 0.01
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _Surface: 0
-    - _WorkflowMode: 1
-    - _ZWrite: 1
+    - CONTENT_NOISE: 0
+    - EMPTY_NOISE: 1
+    - OVERLAY_NOISE: 0
+    - PULSATE_WHEN_LOW: 1
+    - Vector1_5F1B012: 59.6
+    - Vector1_ECC2C9F3: 5.5
+    - Vector1_F9D53FA9: 0
+    - _BorderSpacing: 0.02
+    - _BorderWidth: 0.02
+    - _ContentNoiseScale: 100
+    - _ContentNoiseStrength: 0.2
+    - _EmptyNoiseScale: 100
+    - _EmptyNoiseStrength: 0.5
+    - _LineWidth: 0.01
+    - _OverlayNoiseScale: 100
+    - _OverlayNoiseStrength: 0.5
+    - _PulseActivationThreshold: 0.5
+    - _PulseSpeed: 10
+    - _Radius: 0.393
+    - _RemoveBorder: 0.5
+    - _RemoveSegments: 0
+    - _Rotation: 322
+    - _SecondRemoveSegments: 0.5
+    - _SegmentCount: 7
+    - _SegmentSpacing: 0.033
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 0.1745283, b: 0.20787384, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _BorderColor: {r: 2, g: 2, b: 2, a: 1}
+    - _Color: {r: 0.28773582, g: 1, b: 0.47863358, a: 1}
+    - _ContentNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _EmptyColor: {r: 0.3584906, g: 0.3466536, b: 0.3466536, a: 1}
+    - _EmptyNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _OverlayNoiseOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _SecondColor: {r: 0.3962264, g: 0.1140085, b: 0.1140085, a: 1}
+    - _SpaceColor: {r: 0.990566, g: 0.546268, b: 0, a: 0}
 --- !u!1 &1420168638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,6 +1460,7 @@ GameObject:
   - component: {fileID: 1420168641}
   - component: {fileID: 1420168640}
   - component: {fileID: 1420168639}
+  - component: {fileID: 1420168643}
   m_Layer: 0
   m_Name: RadialSegmentedHealthbarSprite (3)
   m_TagString: Untagged
@@ -1440,7 +1518,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1891100743}
+  - {fileID: 3023885}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1486,6 +1564,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1420168643
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420168638}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47bc8824a79f57f41b34d61ce8b21a70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1474019667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,6 +1595,7 @@ GameObject:
   - component: {fileID: 1474019670}
   - component: {fileID: 1474019669}
   - component: {fileID: 1474019668}
+  - component: {fileID: 1474019672}
   m_Layer: 0
   m_Name: RadialSegmentedHealthbarSprite (5)
   m_TagString: Untagged
@@ -1555,7 +1653,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1387610316}
+  - {fileID: 929341484}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1601,86 +1699,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1834603997
-Material:
-  serializedVersion: 6
+--- !u!95 &1474019672
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: radialSegmentedHealthBarInstance
-  m_Shader: {fileID: 4800000, guid: 4f4011c7964fdec4d896307c35d3946c, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BaseMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlphaClip: 0
-    - _Blend: 0
-    - _BumpScale: 1
-    - _Cull: 2
-    - _Cutoff: 0.5
-    - _DstBlend: 0
-    - _EnvironmentReflections: 1
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
-    - _LineWidth: 0.01
-    - _Metallic: 0
-    - _OcclusionStrength: 1
-    - _QueueOffset: 0
-    - _Radius: 0.393
-    - _ReceiveShadows: 1
-    - _RemoveSegments: 0
-    - _Rotation: 322
-    - _SegmentCount: 7
-    - _SegmentSpacing: 0.033
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _Surface: 0
-    - _WorkflowMode: 1
-    - _ZWrite: 1
-    m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.28773582, g: 1, b: 0.47863358, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_GameObject: {fileID: 1474019667}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47bc8824a79f57f41b34d61ce8b21a70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1852026580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,6 +1730,7 @@ GameObject:
   - component: {fileID: 1852026583}
   - component: {fileID: 1852026582}
   - component: {fileID: 1852026581}
+  - component: {fileID: 1852026585}
   m_Layer: 0
   m_Name: RadialSegmentedHealthbarSprite (2)
   m_TagString: Untagged
@@ -1750,7 +1788,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 158442982}
+  - {fileID: 147579745}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1796,86 +1834,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1891100743
-Material:
-  serializedVersion: 6
+--- !u!95 &1852026585
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: radialSegmentedHealthBarInstance
-  m_Shader: {fileID: 4800000, guid: 4f4011c7964fdec4d896307c35d3946c, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BaseMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _AlphaClip: 0
-    - _Blend: 0
-    - _BumpScale: 1
-    - _Cull: 2
-    - _Cutoff: 0.5
-    - _DstBlend: 0
-    - _EnvironmentReflections: 1
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
-    - _LineWidth: 0.07
-    - _Metallic: 0
-    - _OcclusionStrength: 1
-    - _QueueOffset: 0
-    - _Radius: 0.377
-    - _ReceiveShadows: 1
-    - _RemoveSegments: 1
-    - _Rotation: 0
-    - _SegmentCount: 10
-    - _SegmentSpacing: 0.017
-    - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
-    - _SrcBlend: 1
-    - _Surface: 0
-    - _WorkflowMode: 1
-    - _ZWrite: 1
-    m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 0.19339621, b: 0.82806355, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_GameObject: {fileID: 1852026580}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47bc8824a79f57f41b34d61ce8b21a70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &333312094018044938
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1894,7 +1871,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1133847804}
+  - {fileID: 712608278}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1952,6 +1929,7 @@ GameObject:
   - component: {fileID: 333312094018044938}
   - component: {fileID: 8420331061052251295}
   - component: {fileID: 7883941300351718591}
+  - component: {fileID: 7883941300351718592}
   m_Layer: 0
   m_Name: RadialSegmentedHealthbarSprite
   m_TagString: Untagged
@@ -1972,6 +1950,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPercent: 1
+--- !u!95 &7883941300351718592
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7883941300351718590}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47bc8824a79f57f41b34d61ce8b21a70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &8420331061052251295
 MonoBehaviour:
   m_ObjectHideFlags: 0
