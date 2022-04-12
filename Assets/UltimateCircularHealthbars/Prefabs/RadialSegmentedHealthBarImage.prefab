@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 398f6cbade773684685c88a9e31c0d76, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SegmentCount: 5
   RemovedSegments: 0
-  Spacing: 0.015
+  Spacing: 0.028
   Color: {r: 1, g: 0, b: 0, a: 1}
   Radius: 0.4
   LineWidth: 0.072

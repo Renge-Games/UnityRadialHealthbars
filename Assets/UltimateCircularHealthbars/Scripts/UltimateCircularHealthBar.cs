@@ -60,7 +60,6 @@ namespace RengeGames.HealthBars {
             linewidthID = Shader.PropertyToID("_LineWidth");
             rotationID = Shader.PropertyToID("_Rotation");
 
-#if UNITY_EDITOR
             SpriteRenderer r = GetComponent<SpriteRenderer>();
             if (r != null) {
                 AssignMaterial(r);
@@ -86,7 +85,6 @@ namespace RengeGames.HealthBars {
             SetMaterialPropertyIfChanged(ref oldRadius, Radius, radiusID);
             SetMaterialPropertyIfChanged(ref oldLineWidth, LineWidth, linewidthID);
             SetMaterialPropertyIfChanged(ref oldRotation, Rotation, rotationID);
-#endif
         }
 
         private void Start() {
@@ -161,7 +159,7 @@ namespace RengeGames.HealthBars {
             //get material
             Material mat = Resources.Load<Material>(BaseMaterialName);
 
-            if (Application.isEditor && mat != null && r != null) {
+            if (mat != null && r != null) {
                 //generate and apply the material
                 currentMaterial = new Material(mat);
                 currentMaterial.name = MATERIAL_NAME;
@@ -184,7 +182,7 @@ namespace RengeGames.HealthBars {
             Material mat = Resources.Load<Material>(BaseMaterialName);
             Sprite sprite = Resources.Load<Sprite>("placeholderSprite");
 
-            if (Application.isEditor && mat != null && r != null) {
+            if (mat != null && r != null) {
                 //make sure the sprite will render the shader correctly
                 if (r.sprite == null && sprite != null) {
                     r.sprite = sprite;
