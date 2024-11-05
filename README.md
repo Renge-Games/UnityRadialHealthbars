@@ -8,5 +8,3 @@ A segmented radial health bar shader for Unity 2019 and up.<br/><br/>
 ![Cover Image](https://i.imgur.com/q9SrGm0.png)
 
 ![Demo Image](https://i.imgur.com/YKZNCSQ.png)
-
-![Version Comparison](https://i.imgur.com/EU5iSmD.png)
